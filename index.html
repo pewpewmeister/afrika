@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  	<meta   name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+  	<title>to Africa</title>
+  	<link rel="stylesheet" href="styles/style.css">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link   rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	
+
+	<!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+	integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+	crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+	integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+	crossorigin=""></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"
+	charset="utf-8"></script>
+</head>
+<body>
+  <!-- aboutUS-start -->
+  <video class="video" loop="loop" autoplay="" muted="">
+      		<source src="video/main.mp4"s type="video/mp4" /> 
+  </video>
+  <div class="about-us-container">
+    <!-- header-start -->
+    	
+    <nav class="navbar navbar-expand-md navbar-dark header-media">
+      <div class="container-media-header">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"  aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 header-media-margin">
+            <li class="nav-item mx-2"><a href="#" class="nav-link" aria-current="page" style="color: rgb(252, 245, 236);">О НАС</a></li>
+            <li class="nav-item mx-2"><a href="#" class="nav-link" style="color: rgb(252, 245, 236);">ПУТЕВКИ</a></li>
+            <li class="nav-item mx-2"><a href="#" class="nav-link" style="color: rgb(252, 245, 236);">ОТЗЫВЫ</a></li>
+            <li class="nav-item mx-2"><a href="#" class="nav-link" style="color: rgb(252, 245, 236);">КОНТАКТЫ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-media-header-button">
+      	<img style="width: 35px;height:35px;" src="img/social/tel.png">
+      	<img style="width: 35px;height:35px;" src="img/social/wa.png">
+        <button class="btn btn-outline-success">Перезвоните мне</button>
+      </div>
+    </nav>
+    <!-- header-end -->
+
+    <div class="container media-container-about" style="color: rgb(252, 245, 236);display: flex;align-items: center;justify-content: center;height: 50vh;width: 40%;padding: 0px;margin-top: 10rem;">
+      <div class="flex media-text-about" style="text-shadow: 0px 1px 15px black;color: rgb(252, 245, 236);width: 90%;margin: auto;display: flex;flex-direction: column;align-items: center;justify-content: center;">
+        <h2 style="text-align: center;">Путешествие в самое сердце</h2>
+        <div style="display: flex; align-items: baseline;"><h1 style="font-size: 80px;">Африки</h1><div style="width: 10px"></div></div>
+        <button class="btn btn-outline-success mt-5">Получить консультацию	</button>
+      </div>
+    </div>
+
+    <!-- next slide-start -->
+      <div style="height: 15%; width: 100%; position: absolute; bottom: 0px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <p style="color: rgb(252, 245, 236); font-size: 1.3em;">узнать подробнее</p>
+        <button style="background: none; border: none"><img src="img/down.png" alt=""></button>
+      </div>
+    <!-- next slide-end -->
+
+  </div>
+  <!-- aboutUS-end -->
+
+<!-- Описание - end -->
+<div class="container-fluid day_program" >
+      <div class="desc_conteiner">
+			<div class="desc_conteiner_img">
+				<p>
+				ОКНО В МИР
+				<br>
+				ДИКОЙ
+				<br>
+				ПРИРОДЫ
+				</p>
+			</div>
+			<div>
+				<div class="desc_conteiner_text" style="background-image: url(img/descriptions/savan2.jpg); background-repeat: round;">
+				</div>
+				<div class="desc_conteiner_text">
+					<p style="color:#092327;">
+						"Намибия - это юг Африки и одно из самых невероятных мест на Земле.
+						Экспедиция на больших проходимых джипах с комфортными ночевками посреди африканских пейзажей. Самые большие дюны в мире, самая древняя пустыня и самый большой каньон Африки, немецкие цивилизованные города и города-призраки, наполовину занесенные песком, дикая природа. На сафари мы увидим всех самых популярных африканских животных в дикой природе. После этой экспедиции каждый сможет уверенно сказать, что полностью погрузился в эту страну и культуру, увидел ее всю! Намибия это та самая настоящая Африка! Этот тур для тех, кто предпочитает свободные путешествия. Мы сами водим джипы и сами контролируем всю поездку. Это организованное приключение) Вас будет сопровождать русскоязычный гид и турлидер. Присоединяйся!  Будет здорово! Для граждан РФ виза и прививка не нужна. "
+					</p>
+				</div>
+			</div>
+		</div>
+</div>
+<!-- Описание - end -->
+
+
+
+  <!-- Программа тура - start -->
+    <div class="container-fluid day_program" >
+      <h2 class="mt-5" >Программа тура</h2>
+		<!-- day 1 -->
+    	<div class="row days_block">
+        	<div class="col-md-2" style="display: flex;justify-content: center;">
+          		<div class="day_photo_border" style="transform: rotate(10deg);    border: 4px solid dodgerblue;">
+            		<div class="day_photo" style="background-image: url(img/program/day1.jpg) !important;"></div>
+          		</div>
+        	</div>
+        	<div class="col-md-7" style="display: flex;margin-left: 5em;color: azure;">
+            	<div class="col-md-1" style="height: 100%; width: 4rem;font-size: 7rem;display: flex;align-content: center;align-items: flex-start;line-height: 0.8em; justify-content: flex-end;">
+ 	            	<p>1</p>
+    	        </div>
+    	        <div>
+    	        	<h2>день</h2>
+    	        	<p>
+    	        		- прилет в Виндхук в 13:20 (Эфиопские авиалинии)
+						<br>- встреча в аэропорту
+						<br>- берём джипы 
+						<br>- переезд в Kalahari Anib Lodge
+						<br>- ужин и ночлег
+    	        	</p>
+    	        </div>
+    	    </div>
+    	</div>
+		<!-- day 2 -->
+    	<div class="row days_block" style="padding-left: 5em;">
+        	<div class="col-md-2" style="display: flex;justify-content: center;">
+          		<div class="day_photo_border" style="transform: rotate(350deg);border: 4px solid #009688;">
+            		<div class="day_photo" style="transform: rotate(10deg);background-image: url(img/program/day2.jpg) !important;" ></div>
+          		</div>
+        	</div>
+        	<div class="col-md-7" style="display: flex;margin-left: 5em;color: azure;">
+            	<div class="col-md-1" style="height: 100%; width: 4rem;font-size: 7rem;display: flex;align-content: center;align-items: flex-start;line-height: 0.8em; justify-content: flex-end;">
+ 	            	<p>2</p>
+    	        </div>
+    	        <div>
+    	        	<h2>день</h2>
+    	        	<p>
+	    	        	- экскурсия по Калахари
+						<br>- переезд в Sossusvlei (переезд долгий, около 5ти часов)
+						<br>- заселение в Desert Quiver Camp 
+						<br>- ужин и ночлег 
+						<br>! Можно устроить ужин в пустыне
+					</p>
+    	        </div>
+    	    </div>
+    	</div>
+		<!-- day 3 -->
+    	<div class="row days_block" style="padding-left: 10em;">
+        	<div class="col-md-2" style="display: flex;justify-content: center;">
+          		<div class="day_photo_border" style="transform: rotate(10deg);    border: 4px solid dodgerblue;">
+            		<div class="day_photo" style="background-image: url(img/program/day3.jpg) !important;"></div>
+          		</div>
+        	</div>
+        	<div class="col-md-7" style="display: flex;margin-left: 5em;color: azure;">
+            	<div class="col-md-1" style="height: 100%; width: 4rem;font-size: 7rem;display: flex;align-content: center;align-items: flex-start;line-height: 0.8em; justify-content: flex-end;">
+ 	            	<p>3</p>
+    	        </div>
+    	        <div>
+    	        	<h2>день</h2>
+    	        	<p>	- ранний завтрак в 05:30 утра 
+						<br>- мертвый лес, 
+						<br>- поднимемся вечером на Дюну 
+						<br>- каньон Sesriem 
+						<br>- ужин и Ночлег в Namib Desert Camp 2Go
+					</p>
+    	        </div>
+    	    </div>
+    	</div>
+		<!-- day 4 -->
+    	<div class="row days_block" style="padding-left: 10em;">
+        	<div class="col-md-2" style="display: flex;justify-content: center;">
+          		<div class="day_photo_border" style="transform: rotate(350deg);border: 4px solid #009688;">
+            		<div class="day_photo" style="transform: rotate(10deg);background-image: url(img/program/day4.jpg) !important;" ></div>
+          		</div>
+        	</div>
+        	<div class="col-md-7" style="display: flex;margin-left: 5em;color: azure;">
+            	<div class="col-md-1" style="height: 100%; width: 4rem;font-size: 7rem;display: flex;align-content: center;align-items: flex-start;line-height: 0.8em; justify-content: flex-end;">
+ 	            	<p>4</p>
+    	        </div>
+    	        <div>
+    	        	<h2>день</h2>
+    	        	<p>	
+    	        		<br>- завтрак и переезд в немецкий город Свакопмунд
+						<br>- прогулка на квадрациклах по дюнам
+						<br>- свободный вечер в Свакопмунде
+						<br>- ночлег в Princessin Rupprecht
+					</p>
+    	        </div>
+    	    </div>
+    	</div>
+		<!-- day 5 -->
+    	<div class="row days_block">
+        	<div class="col-md-2" style="display: flex;justify-content: center;">
+          		<div class="day_photo_border" style="transform: rotate(10deg);    border: 4px solid dodgerblue;">
+            		<div class="day_photo" style="background-image: url(img/program/day5.jpg) !important;"></div>
+          		</div>
+        	</div>
+        	<div class="col-md-7" style="display: flex;margin-left: 5em;color: azure;">
+            	<div class="col-md-1" style="height: 100%; width: 4rem;font-size: 7rem;display: flex;align-content: center;align-items: flex-start;line-height: 0.8em; justify-content: flex-end;">
+ 	            	<p>5</p>
+    	        </div>
+    	        <div>
+    	        	<h2>день</h2>
+    	        	<p>	- завтрак и в 07:30 выезд в Walwis Bay
+						<br>- прогулка на корабле и тур в пустыню
+						<br>- возвращение в Свакопмунд 
+						<br>- ночлег в Princessin Rupprecht</p>
+    	        </div>
+    	    </div>
+    	</div>
+		<!-- day 6 -->
+    	<div class="row days_block" style="padding-left: 5em;">
+        	<div class="col-md-2" style="display: flex;justify-content: center;">
+          		<div class="day_photo_border" style="transform: rotate(350deg);border: 4px solid #009688;">
+            		<div class="day_photo" style="transform: rotate(10deg);background-image: url(img/program/day6.jpg) !important;" ></div>
+          		</div>
+        	</div>
+        	<div class="col-md-7" style="display: flex;margin-left: 5em;color: azure;">
+            	<div class="col-md-1" style="height: 100%; width: 4rem;font-size: 7rem;display: flex;align-content: center;align-items: flex-start;line-height: 0.8em; justify-content: flex-end;">
+ 	            	<p>6</p>
+    	        </div>
+    	        <div>
+    	        	<h2>день</h2>
+    	        	<p>	- завтрак и свободное утро
+						<br>- после обеда переезд в Spitzkoppe 
+						<br>- гуляем по окрестностям (знаменитая арка)
+						<br>- ночлег в Ai Aiba Lodge
+					</p>
+    	        </div>
+    	    </div>
+    	</div>
+		<!-- day 7 -->
+		<div class="row days_block" style="padding-left: 10em;">
+        	<div class="col-md-2" style="display: flex;justify-content: center;">
+          		<div class="day_photo_border" style="transform: rotate(10deg);    border: 4px solid dodgerblue;">
+            		<div class="day_photo" style="background-image: url(img/program/day7.jpg) !important;"></div>
+          		</div>
+        	</div>
+        	<div class="col-md-7" style="display: flex;margin-left: 5em;color: azure;">
+            	<div class="col-md-1" style="height: 100%; width: 4rem;font-size: 7rem;display: flex;align-content: center;align-items: flex-start;line-height: 0.8em; justify-content: flex-end;">
+ 	            	<p>7</p>
+    	        </div>
+    	        <div>
+    	        	<h2>день</h2>
+    	        	<p>
+    	        		- посетим племя Бушменов
+						<br>- едем в сторону западного въезда в парк Этоша
+						<br>- посетим деревню Химба
+						<br>- ужин и ночлег в Oppi Koppi 
+    	        	</p>
+    	        </div>
+    	    </div>
+    	</div>
+		<!-- day 8 -->
+		<div class="row days_block" style="padding-left: 10em;">
+        	<div class="col-md-2" style="display: flex;justify-content: center;">
+          		<div class="day_photo_border" style="transform: rotate(350deg);border: 4px solid #009688;">
+            		<div class="day_photo" style="transform: rotate(10deg);background-image: url(img/program/day8.jpg) !important;" ></div>
+          		</div>
+        	</div>
+        	<div class="col-md-7" style="display: flex;margin-left: 5em;color: azure;">
+            	<div class="col-md-1" style="height: 100%; width: 4rem;font-size: 7rem;display: flex;align-content: center;align-items: flex-start;line-height: 0.8em; justify-content: flex-end;">
+ 	            	<p>8</p>
+    	        </div>
+    	        <div>
+    	        	<h2>день</h2>
+    	        	<p>
+    	        			- завтрак и сафари по парку Этоша целый день:
+						<br>- заезжаем с западной стороны и доезжаем до центральной части парка
+						<br>- ночлег в Okakuejo Resort
+					</p>
+    	        </div>
+    	    </div>
+    	</div>
+		<!-- day 9 -->
+		<div class="row days_block">
+        	<div class="col-md-2" style="display: flex;justify-content: center;">
+          		<div class="day_photo_border" style="transform: rotate(10deg);    border: 4px solid dodgerblue;">
+            		<div class="day_photo" style="background-image: url(img/program/day9.jpg) !important;"></div>
+          		</div>
+        	</div>
+        	<div class="col-md-7" style="display: flex;margin-left: 5em;color: azure;">
+            	<div class="col-md-1" style="height: 100%; width: 4rem;font-size: 7rem;display: flex;align-content: center;align-items: flex-start;line-height: 0.8em; justify-content: flex-end;">
+ 	            	<p>9</p>
+    	        </div>
+    	        <div>
+    	        	<h2>день</h2>
+    	        	<p>	
+    	        			- полный день в Этоше
+						<br>- ужин и ночлег в  Etosha Safari Camp2Go
+					</p>
+    	        </div>
+    	    </div>
+    	</div>
+		<!-- day 10 -->
+		<div class="row days_block" style="padding-left: 5em;">
+        	<div class="col-md-2" style="display: flex;justify-content: center;">
+          		<div class="day_photo_border" style="transform: rotate(350deg);border: 4px solid #009688;">
+            		<div class="day_photo" style="transform: rotate(10deg);background-image: url(img/program/day10.jpg) !important;" ></div>
+          		</div>
+        	</div>
+        	<div class="col-md-7" style="display: flex;margin-left: 7em;color: azure;">
+            	<div class="col-md-1" style="height: 100%; width: 4rem;font-size: 7rem;display: flex;align-content: center;align-items: flex-start;line-height: 0.8em; justify-content: flex-end;">
+ 	            	<p>10</p>
+    	        </div>
+    	        <div>
+    	        	<h2>день</h2>
+    	        	<p>
+    	        		- завтрак и утреннее сафари в Этоше 
+						<br>- возвращение обратно в Виндхук
+						<br>- ночлег в Afrikan Kwela Guesthouse 
+					</p>
+    	        </div>
+    	    </div>
+    	</div>
+		<!-- day 11 -->
+		<div class="row days_block" style="padding-left: 10em;">
+        	<div class="col-md-2" style="display: flex;justify-content: center;">
+          		<div class="day_photo_border" style="transform: rotate(10deg);    border: 4px solid dodgerblue;">
+            		<div class="day_photo" style="background-image: url(img/program/day11.jpg) !important;"></div>
+          		</div>
+        	</div>
+        	<div class="col-md-7" style="display: flex;margin-left: 6em;color: azure;">
+            	<div class="col-md-1" style="height: 100%; width: 4rem;font-size: 7rem;display: flex;align-content: center;align-items: flex-start;line-height: 0.8em; justify-content: flex-end;">
+ 	            	<p>11</p>
+    	        </div>
+    	        <div>
+    	        	<h2>день</h2>
+    	        	<p>	
+	        		- завтрак и выезд из отеля в 11:00
+					<br>- трансфер к вашему рейсу
+					</p>
+    	        </div>
+    	    </div>
+    	</div>
+		
+    </div>
+  <!-- Программа тура - end -->
+
+
+  <!-- Лучшие места - start -->
+    <div class="container-fluid best_locations" >
+      <h2 class="mt-5" >Лучшие места</h2>
+    	<div class="gallery swiper mySwiper mt-5">
+    		<div class="gallery_list swiper-wrapper">
+    			<div class="gallery_item swiper-slide">
+    				<img  src="img/best_locations/1.jpg">
+    				<div class="gallery_item_text">
+    					<h3 class="gallery_item_text_title">Title</h3>
+    					<p class="gallery_item_text_descriptions">Descriptions</p>
+    					<a href="">Посмотреть</a>
+    				</div>
+    			</div>
+    			<div class="gallery_item swiper-slide">
+    				<img src="img/best_locations/1.jpg">
+    				<div class="gallery_item_text">
+    					<h3 class="gallery_item_text_title">Title</h3>
+    					<p class="gallery_item_text_descriptions">Descriptions</p>
+    					<a href="">Посмотреть</a>
+    				</div>
+    			</div>
+
+    		</div>
+		    <div class="swiper-pagination"></div>
+    	</div>
+    </div>
+  <!-- Лучшие места - end -->
+
+
+  <!-- Карта тура - start -->
+
+
+	<div class="container-fluid tour_map" >
+		<h2 class="mt-5" >Карта тура</h2>
+		<div style="width: 80%;">
+			<div id="map" class="mt-5" style="height: 80vh;"></div>
+		</div>
+	  </div>
+  
+  
+  <!-- Карта тура - end -->
+
+  <!-- Что включено ? - start -->
+<div style="width: 100%; background-color: #0b5351;">
+	<div class="container options">
+		<h2 class="mt-3" >Что включено ?</h2>
+		<div class="row mt-3" style="width: 90%; max-width: 900px;">
+			<div class="col-md-6">
+				<div style="text-align: center;">
+					<h3>Включено</h3>
+				</div>
+				<ul>
+					<li><i class="bi bi-check-square"></i> Трансфер от и до аэропорта</li>
+					<li><i class="bi bi-check-square"></i> Проживание в отеле DBL с завтраками</li>
+					<li><i class="bi bi-check-square"></i> Аренда джипов</li>
+					<li><i class="bi bi-check-square"></i> Бензин</li>
+					<li><i class="bi bi-check-square"></i> Входные билеты в парки</li>
+					<li><i class="bi bi-check-square"></i> Экскурсии</li>
+					<li><i class="bi bi-check-square"></i> Русскоязычный гид</li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<div style="text-align: center;">
+					<h3>Не включено</h3>
+				</div>
+				<ul>
+					<li><i class="bi bi-x-circle"></i> Обеды и ужины</li>
+					<li><i class="bi bi-x-circle"></i> Алкоголь</li>
+					<li><i class="bi bi-x-circle"></i> Повышение уровня номера до single</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row mt-3" style="width: 90%; max-width: 900px;">
+			<div class="col-md-6">
+				<div style="text-align: center;">
+					<h3>Проживание</h3>
+				</div>
+				<ul>
+					<li id="Kalahari_Anib_Lodge"		class="hotels-button hotel-active" 	onclick='getPhoto(this)' style="cursor: pointer;"><i class="bi bi-building"></i> Hotel Kalahari Anib Lodge</li>
+					<li id="Desert_Quiver_Camp"			class="hotels-button " 				onclick='getPhoto(this)' style="cursor: pointer;"><i class="bi bi-building"></i> Hotel Desert Quiver Camp</li>
+					<li id="Namib_Desert_Camp2Go" 		class="hotels-button " 				onclick='getPhoto(this)' style="cursor: pointer;"><i class="bi bi-building"></i> Hotel Namib Desert Camp2Go</li>
+					<li id="Princessin_Rupprecht" 		class="hotels-button " 				onclick='getPhoto(this)' style="cursor: pointer;"><i class="bi bi-building"></i> Hotel Princessin Rupprecht</li>
+					<li id="Ai_Aiba_Lodge" 				class="hotels-button " 				onclick='getPhoto(this)' style="cursor: pointer;"><i class="bi bi-building"></i> Hotel Ai Aiba Lodge</li>
+					<li id="Oppi_Koppi" 				class="hotels-button " 				onclick='getPhoto(this)' style="cursor: pointer;"><i class="bi bi-building"></i> Hotel Oppi Koppi</li>
+					<li id="Okakuejo_Resort" 			class="hotels-button " 				onclick='getPhoto(this)' style="cursor: pointer;"><i class="bi bi-building"></i> Hotel Okakuejo Resort</li>
+					<li id="Etosha_Safari_Camp2Go" 		class="hotels-button " 				onclick='getPhoto(this)' style="cursor: pointer;"><i class="bi bi-building"></i> Hotel Etosha Safari Camp2Go</li>
+					<li id="Afrikan_Kwela_Guesthouse" 	class="hotels-button " 				onclick='getPhoto(this)' style="cursor: pointer;"><i class="bi bi-building"></i> Hotel Afrikan Kwela Guesthouse</li>
+				</ul> 
+			</div>
+			<div class="col-md-6">
+				<img id = "hotel_photo" src="img/hotels/Kalahari_Anib_Lodge.jpg" alt="" width="100%">
+			</div>
+		</div>
+	</div>
+</div>
+  <!-- Что включено ? - end -->
+
+
+	<!-- форма - start -->
+
+
+
+<div class="wrapper-form" style="width: 100%; height: 100vh; background-color: #192849; display: flex; justify-content: center; align-items: center;">
+	<div class="left-side-form">
+		<div class="left-block-form">
+			<div class="blur"></div>
+		</div>
+	</div>
+	<div class="right-side-form">
+		<div class="right-block-form">
+			<div class="right-block-form-text mt-3">
+				<h3 style="font-weight: 600">ПУТЕШЕСТВИЕ В</h3>
+				<h1 style="font-weight: 800"><b>АФРИКУ</b></h1>
+				<p style="line-height: 1;">путешествие на роскошном автомобиле</p>
+				<p style="line-height: 0;"><b>Jeep Grand Cherokee</b> по всей Африке</p>
+			</div>
+			<div class="right-block-form-icons mt-3">
+				<div class="icons-on-block" style="display: flex; width: 100%; justify-content: space-evenly;">
+					<div class="form-icons-styles" style="width: 33.3%;">
+						<img src="img/form/image%201.png" alt="" width="70%">
+					</div>
+					<div class="form-icons-styles" style="width: 33.3%;">
+						<img src="img/form/image%202.png" alt="" width="70%">
+					</div>
+					<div class="form-icons-styles" style="width: 33.3%;">
+						<img src="img/form/image%203.png" alt="" width="70%">
+					</div>
+				</div>
+				<div class="text-on-block" style="display: flex; width: 100%; justify-content: space-evenly; text-align: center; align-items: center;">
+					<p style="width: 33.3%;"><b>10</b> дней</p>
+					<p style="width: 33.3%;"><b>11</b> ночей</p>
+					<p style="width: 33.3%; margin-top: 2%"><b>$ 4999</b> <br>с человека</p>
+				</div>
+			</div>
+			<div class="right-block-form-inputs">
+				<form action="">
+					<div style="height: 30%;">
+						<p style="line-height: 0;">Номер телефона / email</p>
+						<div class="d-flex mt-2">
+							<input class="form-input-style" type="tel" width="70%">
+							<select class="form-input-style" name="social" id="" style="width: 30%">
+								<option value="value1">whatsapp</option>
+								<option value="value1">telegram</option>
+								<option value="value1">viber</option>
+								<option value="value1">Эл. почта</option>
+							</select>
+						</div>
+					</div>
+					<div class="button-and-social">
+						<div class="buttons" style="display: flex; flex-direction: row; justify-content: center; align-items: center; width: 100%;">
+							<button class="btn mt-3" style="background: #082023; color: #FFFFFF; width: 100%;">ЗАБРОНИРОВАТЬ</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="right-block-form-dop">
+				<p>* без учета перелета до аэропорта</p>
+			</div>
+		</div>
+	</div>
+</div>
+  <!-- форма - end -->
+
+
+
+  <!-- OUR TEAM - START -->
+  <section id="our-team" style="background: #0b5351; padding-top: 40px !important; padding-bottom: 40px !important;">
+	  <div class="row">
+		  <div class="col-md-2" style="height: 20px;"></div>
+		  <div class="col-md-8 mb-3" style="text-align: center;">
+			  <h2 STYLE="color: azure">Наша команда: </h2>
+		  </div>
+		  <div class="col-md-2" style="height: 20px;"></div>
+	  </div>
+	  <div class="container">
+		  <div class="row">
+			  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				  <div class="our-team">
+					  <div class="picture">
+						  <img class="img-fluid" src="img/corgi.png">
+					  </div>
+					  <div class="team-content">
+						  <h3 class="name">Michele Miller</h3>
+						  <h4 class="title">Гид</h4>
+					  </div>
+					  <ul class="social">
+						  <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li>
+						  <li><a href="#" class="fa fa-twitter" aria-hidden="true"></a></li>
+						  <li><a href="#" class="fa fa-google-plus" aria-hidden="true"></a></li>
+						  <li><a href="#" class="fa fa-linkedin" aria-hidden="true"></a></li>
+					  </ul>
+				  </div>
+			  </div>
+			  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				  <div class="our-team">
+					  <div class="picture">
+						  <img class="img-fluid" src="img/corgi.png">
+					  </div>
+					  <div class="team-content">
+						  <h3 class="name">Patricia Knott</h3>
+						  <h4 class="title">Гид</h4>
+					  </div>
+					  <ul class="social">
+						  <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li>
+						  <li><a href="#" class="fa fa-twitter" aria-hidden="true"></a></li>
+						  <li><a href="#" class="fa fa-google-plus" aria-hidden="true"></a></li>
+						  <li><a href="#" class="fa fa-linkedin" aria-hidden="true"></a></li>
+					  </ul>
+				  </div>
+			  </div>
+			  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				  <div class="our-team">
+					  <div class="picture">
+						  <img class="img-fluid" src="img/corgi.png">
+					  </div>
+					  <div class="team-content">
+						  <h3 class="name">Justin Ramos</h3>
+						  <h4 class="title">Водитель</h4>
+					  </div>
+					  <ul class="social">
+						  <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li>
+						  <li><a href="#" class="fa fa-twitter" aria-hidden="true"></a></li>
+						  <li><a href="#" class="fa fa-google-plus" aria-hidden="true"></a></li>
+						  <li><a href="#" class="fa fa-linkedin" aria-hidden="true"></a></li>
+					  </ul>
+				  </div>
+			  </div>
+			  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				  <div class="our-team">
+					  <div class="picture">
+						  <img class="img-fluid" src="img/corgi.png">
+					  </div>
+					  <div class="team-content">
+						  <h3 class="name">Mary Huntley</h3>
+						  <h4 class="title">Фотограф</h4>
+					  </div>
+					  <ul class="social">
+						  <li><a href="#" class="fa fa-facebook" aria-hidden="true"></a></li>
+						  <li><a href="#" class="fa fa-twitter" aria-hidden="true"></a></li>
+						  <li><a href="#" class="fa fa-google-plus" aria-hidden="true"></a></li>
+						  <li><a href="#" class="fa fa-linkedin" aria-hidden="true"></a></li>
+					  </ul>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  </section>
+  <!-- OUR TEAM - END -->
+
+
+
+  <!-- ОТЗЫВЫ - START -->
+  <div class="wrapper-review" style="display: flex; flex-direction: column; align-items: center; background-color: #192849">
+	  <h2 class="mt-5" STYLE="color: azure">Что включено ?</h2>
+	  <div class="review mt-3" style="width: 80%;">
+		 <div class="review-photo">
+			 <img src="img/corgi.png">
+		 </div>
+		 <div class="review-box">
+			  <div class="review-author">
+				  <p><strong>Волков П.В.</strong>
+					  <i class="fa fa-star" aria-hidden="true"></i>
+					  <i class="fa fa-star" aria-hidden="true"></i>
+					  <i class="fa fa-star" aria-hidden="true"></i>
+					  <i class="fa fa-star" aria-hidden="true"></i>
+					  <i class="fa fa-star" aria-hidden="true"></i>
+				  </p>
+			  </div>
+			  <div class="review-comment">
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at consectetur cupiditate doloremque minus modi omnis provident quisquam rerum voluptate. Accusamus animi debitis fugiat in itaque minima nobis ullam ut.</p>
+			  </div>
+			  <div class="review-date">
+				  <time>November, 28th, 2021</time>
+			  </div>
+		 </div>
+	  </div>
+	  <div class="review mt-3" style="width: 80%;">
+		  <div class="review-photo">
+			  <img src="img/corgi.png">
+		  </div>
+		  <div class="review-box">
+			  <div class="review-author">
+				  <p><strong>Гадисов А.Д.</strong>
+					  <i class="fa fa-star" aria-hidden="true"></i>
+					  <i class="fa fa-star" aria-hidden="true"></i>
+					  <i class="fa fa-star" aria-hidden="true"></i>
+					  <i class="fa fa-star" aria-hidden="true"></i>
+					  <i class="fa fa-star" aria-hidden="true"></i>
+				  </p>
+			  </div>
+			  <div class="review-comment">
+				  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe laborum provident officia culpa est, dolore nemo. Autem, ipsa asperiores. Harum laudantium enim aspernatur nemo dignissimos. Numquam minima saepe exercitationem.</p>
+			  </div>
+			  <div class="review-date">
+				  <time>November, 28th, 2021</time>
+			  </div>
+		  </div>
+	  </div>
+  </div>
+  <!-- ОТЗЫВЫ - END -->
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="script/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</body>
+</html>
